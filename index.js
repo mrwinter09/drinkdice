@@ -31,6 +31,11 @@ if (randomNumber1 === randomNumber2){
     document.querySelector(".footer").textContent = "Cheers, drinks on Player 1";
 }
 
+document.addEventListener('keyup', function(e){
+  if(e.keyCode == 32)
+    window.location.reload();
+})
+
 
 // if(randomNumber1 === 1){
 //     document.querySelector(".img1").setAttribute("src", "/images/dice1.png");
